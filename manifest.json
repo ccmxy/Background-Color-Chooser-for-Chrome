@@ -1,8 +1,8 @@
 
 	{
-    "name": "Page Redder",
-	  "description": "Make the current page red",
-	  "version": "2.0",
+    "name": "Choose your background color",
+	  "description": "Chrome extension to allow user to choose their own background color",
+	  "version": "0.1",
 	  "permissions": [
 	    "activeTab"
 	  ],
