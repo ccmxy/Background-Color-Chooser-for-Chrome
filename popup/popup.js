@@ -4,6 +4,7 @@ document.getElementById("colorButton").onclick = function(e){
 }
 
 function changeColor() {
+  var color = document.getElementById('color_input').value;
   chrome.tabs.executeScript({
   code: 'document.body.style.backgroundColor="' + color + '"'
 });
