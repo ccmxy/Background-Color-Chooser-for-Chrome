@@ -4,10 +4,11 @@
 
 	// Called when the user clicks on the browser action.
 	//
-	var number = Math.floor((Math.random() * 4) + 1);
-	var colorArray = ['red', 'blue', 'yellow', 'pink', 'orange'];
 	//
 	chrome.browserAction.onClicked.addListener(function(tab) {
+		var number = Math.floor((Math.random() * 4) + 1);
+		var colorArray = ['red', 'blue', 'yellow', 'pink', 'orange'];
+
   // No tabs or host permissions needed!
 	  console.log('Turning ' + tab.url + ' red!');
   chrome.tabs.executeScript({
