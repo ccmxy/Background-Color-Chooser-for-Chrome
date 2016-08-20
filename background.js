@@ -5,6 +5,15 @@
 	// Called when the user clicks on the browser action.
 	//
 	//
+// 
+// chrome.runtime.onMessage.addListener(
+//   function(request, sender, sendResponse) {
+//     if (request.greeting == "hello")
+//       sendResponse({
+//         msg: "goodbye!"
+//       });
+//   });
+
 	chrome.browserAction.onClicked.addListener(function(tab) {
 		var number = Math.floor((Math.random() * 4) + 1);
 		var colorArray = ['red', 'blue', 'yellow', 'pink', 'orange'];
